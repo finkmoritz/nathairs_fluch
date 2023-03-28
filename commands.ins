@@ -1,6 +1,19 @@
 \usepackage{tabularx} % tables
 \usepackage{xargs} % multiple parameters
 
+\newcolumntype{Y}{>{\centering\arraybackslash}X} % same as 'X' but centered
+
+\newcommandx{\dndtextbox}[2][1=\linewidth]{
+	{
+		\setlength{\fboxsep}{1em}
+		\fbox{
+			\parbox{#1}{
+				#2
+			}
+		}
+	}
+}
+
 \newcommandx{\dndspell}[8][1=-, 2=-, 3=-, 4=-, 5=-, 6=-, 7=~, 8=~]{
 	\begin{tabularx}{\linewidth}{X}
 		{\Large \bfseries{#1}}\\
@@ -15,4 +28,50 @@
 		{\scriptsize #7}\\
 		{\scriptsize #8}
 	\end{tabularx}
+}
+
+\newcommandx{\dndmonsterheader}[5][1=-, 2=-, 3=-, 4=-, 5=-]{
+	{\Large \bfseries{#1}}\\
+	{\small \textit{#2}}\\
+	~\\
+	{\footnotesize {\bfseries Rüstungsklasse:} #3}\\
+	{\footnotesize {\bfseries Trefferpunkte:} #4}\\
+	{\footnotesize {\bfseries Bewegungsrate:} #5}\\
+	~\\
+}
+
+\newcommandx{\dndmonsterattributes}[6][1=-, 2=-, 3=-, 4=-, 5=-, 6=-]{
+	\begin{tabularx}{\linewidth}{YYYYYY}
+		{\small {\bfseries STR}} &
+		{\small {\bfseries GES}} &
+		{\small {\bfseries KON}} &
+		{\small {\bfseries INT}} &
+		{\small {\bfseries WEI}} &
+		{\small {\bfseries CHA}}\\
+		
+		{\small #1} &
+		{\small #2} &
+		{\small #3} &
+		{\small #4} &
+		{\small #5} &
+		{\small #6}
+	\end{tabularx}
+	~\\
+}
+
+\newcommandx{\dndmonsterinfo}[4][1=-, 2=-, 3=-, 4=-]{
+	{\footnotesize {\bfseries Fertigkeiten:} #1}\\
+	{\footnotesize {\bfseries Sinne:} #2}\\
+	{\footnotesize {\bfseries Sprachen:} #3}\\
+	{\footnotesize {\bfseries Herausforderungsgrad:} #4}\\
+	~\\
+}
+
+\newcommandx{\dndmonsterfeature}[2]{
+	{\footnotesize {\bfseries #1:} #2}\\
+	~\\
+}
+
+\newcommandx{\dndattack}[5]{
+	\textit{#1:} #2 auf Treffer, Reichweite #3, #4. \textit{Treffer:} #5
 }
