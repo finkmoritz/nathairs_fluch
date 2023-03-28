@@ -44,13 +44,15 @@
 	\end{tabularx}
 }
 
-\newcommandx{\dndmonsterheader}[5][1=-, 2=-, 3=-, 4=-, 5=-]{
+\newcommandx{\dndmonsterheader}[6][1=-, 2=-, 3=~, 4=-, 5=-, 6=-]{
 	{\Large \bfseries{#1}}\\
 	{\small \textit{#2}}\\
 	~\\
-	{\footnotesize {\bfseries Rüstungsklasse:} #3}\\
-	{\footnotesize {\bfseries Trefferpunkte:} #4}\\
-	{\footnotesize {\bfseries Bewegungsrate:} #5}\\
+	{\scriptsize #3}\\
+	~\\
+	{\footnotesize {\bfseries Rüstungsklasse:} #4}\\
+	{\footnotesize {\bfseries Trefferpunkte:} #5}\\
+	{\footnotesize {\bfseries Bewegungsrate:} #6}\\
 	~\\
 }
 
