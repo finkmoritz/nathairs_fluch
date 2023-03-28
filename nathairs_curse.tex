@@ -1,0 +1,80 @@
+\documentclass[]{scrartcl}
+
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{calligra} % font
+\usepackage{hyperref} % URLs, links
+\usepackage{lscape} % landscape mode
+\usepackage{tabularx} % tables
+
+\input{commands.ins}
+
+\title{Nathair's Fluch}
+\author{Moritz Fink}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Diese Dungeons \& Dragons Kampagne wurde inspiriert von J.K. Rowling und David Ng (vgl. \url{https://popperfont.files.wordpress.com/2016/12/hpddcampaign1.pdf}). Dieses Skript ist dabei ausschließlich für den Spielleiter vorgesehen.
+\end{abstract}
+
+\section{Ein mysteriöser Brief}
+
+\newpage
+
+{\calligra \large
+	
+Liebe Muggel,\\
+
+uns bleibt nur wenig Zeit, die Situation zu erklären. Also werden wir uns kurzfassen.\\
+
+Der Zauberstab, welchen ihr besitzt, ist mit äußerster Vorsicht zu behandeln, denn es handelt sich in Wirklichkeit um den Zauberstab unserer Mutter. Große und mächtige Taten wurden damit schon vollführt!\\
+
+Doch als er zu einer Gefahr für die freie Welt der Hexen und Zauberer wurde, haben wir ihn (schlauerweise) als Spielzeug getarnt in einem Muggelgeschäft versteckt, damit er vor den Augen dunkler Mächte verschlossen bleibt. Bedauerlicherweise können wir nicht mehr für eure Sicherheit garantieren, da Nathair’s Schergen herausgefunden haben, wo sich der Zauberstab befindet.\\
+
+Somit tragt ihr nun die Bürde, ihn sicher nach Hogwarts zu bringen und an eine gewisse Mrs. Weasley-Granger zu übergeben.\\
+
+Um euch bei dieser Aufgabe zu helfen, haben wir dem Brief Teebeutel beigelegt. Sucht euch jeweils einen Zauberstabersatz (etwas Zauberstab-artiges) und haltet diesen fest in eurer Hand, während ihr trinkt. Sobald jeder von euch getrunken hat, fungiert der (echte) Zauberstab als Portschlüssel. Stellt sicher, dass ihr ihn alle gleichzeitig berührt und alles Wichtige mitnehmt!\\
+
+Sobald ihr angekommen seid, steigt \underline{zügig} ein und achtet darauf, dass ihr nicht verfolgt werdet. Findet den Ort an dem \underline{nur ein Stück pro Person} erlaubt ist.\\
+
+Beeilt euch, denn es gilt keine Sekunde zu verlieren!\\
+
+~\\
+
+Hochachtungsvoll\\
+Lorcan \& Lysander
+}
+
+\newpage
+
+\section{Der Hogwarts Express}
+
+\appendix
+
+\begin{landscape}
+	\section{Spells}
+	
+	\begin{tabularx}{\linewidth}{XXX}
+		\dndspell[Lumos][Zaubertrick der Hervorrufung][Eine Aktion][Selbst][V, S, M (Zauberstab)][Eine Stunde][Während der Wirkungsdauer strahlt dein Zauberstab helles Licht in einem Radius von sechs Metern und dämmriges Licht im Radius von weiteren sechs Metern aus. Du kannst die Farbe des Lichts frei wählen. Wenn der Gegenstand mit etwas Blickdichtem abgedeckt wird, wird das Licht blockiert. Der Zauber endet vorzeitig, wenn du ihn erneut wirkst oder ihn als Aktion aufhebst.]{} &
+		
+		\dndspell[Reparo][Zaubertrick der Verwandlung][Eine Minute][Berührung][V, S, M (Zauberstab)][Unmittelbar][Dieser Zauber repariert einen Bruch oder Riss eines von dir berührten Gegenstands, wie z.B. einer gebrochenen Kette, eines halbierten Schlüssels, oder eines zerrissenen Umhangs. Sofern der Bruch oder Riss nicht größer als 30cm in jede Richtung ist, reparierst du ihn ohne nachweisliche Spuren des Schadens zurückzulassen.][Dieser Zauber kann zwar einen magischen Gegenstand oder ein Konstrukt physisch reparieren, jedoch keine – dem Gegenstand innewohnende - Magie selbst wiederherstellen.]{} &
+		
+		\dndspell[Incendio][Zaubertrick der Hervorrufung][Eine Aktion][9 Meter][V, S, M (Zauberstab)][Unmittelbar][Ein flackerndes Feuer schießt aus deinem Zauberstab auf eine Kreatur in Reichweite zu. Führe einen Fernkampf-Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet es 1W8 Feuerschaden.][Der Schaden erhöht sich jeweils um 1W8 beim Erreichen des 5. Grades (2W8), 11. Grades (3W8), und 17. Grades (4W8).]{}
+	\end{tabularx}
+
+	\begin{tabularx}{\linewidth}{XXX}
+		\dndspell[Episkey][Hervorrufung 1. Grades][Eine Aktion][Berührung][V, S, M (Zauberstab)][Unmittelbar][Eine Kreatur, die du berührst, gewinnt Trefferpunkte in Höhe von 1W8 + dein Zauberwirken-Attributsmodifikator (Weisheit) zurück. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.][{\bfseries Auf höheren Graden:} Wirkst du diesen Zauber, indem du einen Zauberplatz 2. Grades oder höher nutzt, steigt die Heilung für jeden Grad über dem 1. um 1W8.]{} &
+		
+		\dndspell[Expelliarmus][Verzauberung 1. Grades][Eine Aktion][18 Meter][V, S, M (Zauberstab)][Unmittelbar][Das Ziel macht einen Weisheitsrettungswurf. Ist es dabei nicht erfolgreich, so lässt es seinen Zauberstab fallen und fällt auf den Boden (liegend).][{\bfseries Auf höheren Graden:} Wirkst du diesen Zauber, indem du einen Zauberplatz 2. Grades oder höher nutzt, kann für jeden Grad über dem 1. Eine zusätzliche Kreatur betroffen sein. Die Kreaturen müssen sich innerhalb von 9 Metern voneinander befinden, wenn du sie als Ziel wählst.]{} &
+		
+		\dndspell[Sectumsempra][Nekromantie 1. Grades][Eine Aktion][18 Meter][V, S, M (Zauberstab)][Unmittelbar][Führe einen Fernkampf-Zauberangriff gegen eine Kreatur in Reichweite aus. Bei einem Treffer erleidet sie 3W10 nekromantischen Schaden.][{\bfseries Auf höheren Graden:} Wirkst du diesen Zauber, indem du einen Zauberplatz 2. Grades oder höher nutzt, erhöht sich der Schaden für jeden Grad über dem 1. um 1W10.]{}
+	\end{tabularx}
+\end{landscape}
+
+\section{Monsters}
+
+\end{document}

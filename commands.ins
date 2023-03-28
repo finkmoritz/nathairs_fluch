@@ -1,0 +1,18 @@
+\usepackage{tabularx} % tables
+\usepackage{xargs} % multiple parameters
+
+\newcommandx{\dndspell}[8][1=-, 2=-, 3=-, 4=-, 5=-, 6=-, 7=~, 8=~]{
+	\begin{tabularx}{\linewidth}{X}
+		{\Large \bfseries{#1}}\\
+		~\\
+		{\small \textit{#2}}\\
+		~\\
+		{\footnotesize {\bfseries Zeitaufwand:} #3}\\
+		{\footnotesize {\bfseries Reichweite:} #4}\\
+		{\footnotesize {\bfseries Komponenten:} #5}\\
+		{\footnotesize {\bfseries Wirkungsdauer:} #6}\\
+		~\\
+		{\scriptsize #7}\\
+		{\scriptsize #8}
+	\end{tabularx}
+}
