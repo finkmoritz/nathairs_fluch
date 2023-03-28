@@ -1,4 +1,5 @@
 \usepackage{tabularx} % tables
+\usepackage{tcolorbox} % colorbox
 \usepackage{xargs} % multiple parameters
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X} % same as 'X' but centered
@@ -11,6 +12,19 @@
 				#2
 			}
 		}
+	}
+}
+
+\newcommandx{\dndinfobox}[2][1=Info]{
+	{
+		\centering
+		\begin{tcolorbox}[colback=orange!15!white,
+			colframe=orange!75!black,
+			title=#1,
+			width=0.9\linewidth
+			]
+			#2
+		\end{tcolorbox}
 	}
 }
 
